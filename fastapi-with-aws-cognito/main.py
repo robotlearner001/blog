@@ -4,10 +4,7 @@ import httpx
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.security import OAuth2PasswordBearer
-from jose import jwt, jwk
-from pydantic import BaseModel
 from fastapi import Request
-from jose.exceptions import JWTError, ExpiredSignatureError, JWTClaimsError, JWKError
 import jwt
 from jwt import PyJWKClient
 
